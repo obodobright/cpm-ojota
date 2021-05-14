@@ -1,0 +1,111 @@
+:root {
+    --gradient: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871)
+}
+
+.believe-statement {
+    background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+    width: 700;
+    height: 500;
+    padding: 5em 2em;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 2;
+    color: white;
+    position: relative;
+    top: -12vh
+}
+
+.vision-statement {
+    margin-top: 2em
+}
+
+.mission-statement {
+    margin-top: 3em
+}
+
+.mission-statement ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mission-statement ul .fa {
+    margin-left: auto;
+}
+
+.leader-image {
+    width: 400;
+    border-radius: 25em
+}
+
+.leader-content {
+    padding-left: 1em;
+    letter-spacing: 1;
+    word-spacing: 1;
+}
+
+#leader-info h3 {
+    position: relative;
+    color: rgb(5, 5, 53);
+    text-transform: uppercase;
+}
+
+#leader-info h3::after {
+    position: absolute;
+    top: 1.3em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    content: '';
+    height: 0.18rem;
+    background: linear-gradient(to right, red, blue);
+}
+
+#service-info h3 {
+    position: relative;
+    color: rgb(5, 5, 53);
+    text-transform: uppercase;
+}
+
+#service-info h3::after {
+    position: absolute;
+    top: 1.3em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    content: '';
+    height: 0.18rem;
+    background: linear-gradient(to right, red, blue);
+}
+
+#service-info {
+    background: transparent;
+    margin-top: auto;
+    padding: 0.5em;
+    border-radius: 0.5em
+}
+
+.service-header {
+    text-align: center;
+    padding: 0.5em;
+    width: 450;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.service-days {
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.service-days h6 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
