@@ -4,15 +4,104 @@
 
 .believe-statement {
     background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
-    width: 700;
+    width: 400;
     height: 500;
-    padding: 5em 2em;
+    padding: 3em 2em;
     margin: auto;
     text-align: center;
     letter-spacing: 2;
     color: white;
     position: relative;
     top: -12vh
+}
+
+@media(min-width:768px) {
+    .leader-image {
+        width: 400;
+        border-radius: 25em
+    }
+    .leader-content {
+        padding-left: 1em;
+        letter-spacing: 1;
+        word-spacing: 1;
+    }
+    .cpm-leaders {
+        display: flex;
+    }
+    .leader-name-mobile {
+        display: none
+    }
+    .service-header {
+        text-align: center;
+        padding: 0.5em;
+        width: 450;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .service-days {
+        margin-bottom: 1.5em;
+        padding: 0.5em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .service-days h6 {
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    .service-header {
+        text-align: center;
+        padding: 0.5em;
+        width: 450;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .service-days-container {
+        display: flex
+    }
+    .service-days h6 {
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+}
+
+@media (max-width:768px) {
+    .leader-img-container {
+        display: flex
+    }
+    .leader-image {
+        width: 200;
+        border-radius: 25em;
+        margin: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .cpm-leaders {
+        display: block;
+    }
+    .leader-name-desktop {
+        display: none;
+    }
+    #service-info {
+        background: whitesmoke;
+        margin-top: auto;
+        padding: 0.5em;
+        border-radius: 0.5em
+    }
+    .service-header {
+        text-align: center;
+        padding: 0.5em;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .service-days h6 {
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .service-header h4 {
+        font-size: 20px;
+    }
 }
 
 .vision-statement {
@@ -31,17 +120,6 @@
 
 .mission-statement ul .fa {
     margin-left: auto;
-}
-
-.leader-image {
-    width: 400;
-    border-radius: 25em
-}
-
-.leader-content {
-    padding-left: 1em;
-    letter-spacing: 1;
-    word-spacing: 1;
 }
 
 #leader-info h3 {
@@ -82,30 +160,10 @@
     background: linear-gradient(to right, red, blue);
 }
 
-#service-info {
-    background: transparent;
-    margin-top: auto;
-    padding: 0.5em;
-    border-radius: 0.5em
-}
-
-.service-header {
-    text-align: center;
-    padding: 0.5em;
-    width: 450;
-    margin-left: auto;
-    margin-right: auto
-}
-
 .service-days {
     margin-bottom: 1.5em;
     padding: 0.5em;
     text-align: center;
     margin-left: auto;
     margin-right: auto
-}
-
-.service-days h6 {
-    font-size: 1.2em;
-    font-weight: 400;
 }

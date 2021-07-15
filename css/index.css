@@ -22,7 +22,7 @@
     
     header {
         height: 400px;
-        background-image: url('../image/cpmmain.jpeg');
+        background-image: url('../image/homepage.jpeg');
         background-size: cover;
         background-position: center;
     }
@@ -180,36 +180,85 @@
             height: 0.18rem;
             background: linear-gradient(to right, red, blue);
         }
-        .about-content h4 {
-            padding-bottom: 1em
-        }
-        .service-content {
-            margin-top: 3em
-        }
-        .service-content h4 {
-            text-align: center
-        }
-        .service-time h5 {
-            border: 1px solid black;
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 3px 4px
-        }
-        .leadership-content {
-            margin-top: 2em
-        }
-        .leader-content h5 {
-            padding-left: 2em;
-            padding-top: 1em
-        }
-        .contact-us {
-            margin-top: 3em
-        }
-        .contact-content {
-            padding-top: 1em;
+        .believe-statement {
+            background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+            width: 400;
+            height: 500;
+            padding: 0.5em 0.5em;
+            margin: auto;
             text-align: center;
-            padding-bottom: 1em;
+            letter-spacing: 2;
+            color: white;
+            position: relative;
+            top: -12vh
+        }
+        .slideshow-container {
+            position: relative;
+            top: -14vh;
+            width: 200%;
+        }
+        .flex-card {
+            display: block
+        }
+        .card-container1 {
+            width: 400px;
+            padding: 1em 2em;
+            background: linear-gradient(to right, red, blue);
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            margin: 0.1em;
+            font-family: cursive;
+        }
+        .card-container2 {
+            width: 400px;
+            padding: 1em 2em;
+            background: linear-gradient(to right, blue, whitesmoke);
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            margin: 0.1em;
+            font-family: cursive;
+        }
+        .year-proclaimation {
+            margin: auto;
+            margin-top: 1em
+        }
+        .year-proclaimation img {
+            width: 100%
+        }
+        .contactCpm {
+            text-align: center;
+            padding: 2em;
+            margin: 0.5em;
+            color: white;
+            font-family: cursive;
+        }
+        .aboutCpm {
+            text-align: center;
+            padding: 2em;
+            margin: 0.5em;
+            color: white;
+            font-family: cursive;
+        }
+        .aboutCpm a,
+        .contactCpm a {
+            color: white
+        }
+        .aboutCpm h4,
+        .contactCpm h4 {
+            margin-bottom: 1em;
+        }
+        .footer {
+            background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871)
+        }
+        .form-contact {
+            text-align: center;
+            background: darkslateblue;
+            width: 100%;
+            padding: 1em;
+            color: white;
+            border-top-right-radius: 2em
         }
     }
     
@@ -277,7 +326,93 @@
             background: linear-gradient(to right, red, blue);
             left: 5;
         }
+        /* Welcome statement for index.html for small screen */
+        .believe-statement {
+            background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+            width: 700;
+            height: 500;
+            padding: 2em 2em;
+            margin: auto;
+            text-align: center;
+            letter-spacing: 2;
+            color: white;
+            position: relative;
+            top: -12vh
+        }
+        .slideshow-container {
+            max-width: 1220px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .flex-card {
+            display: flex;
+            justify-content: center;
+        }
+        .card-container1 {
+            width: 500px;
+            padding: 1em 2em;
+            background: linear-gradient(to right, red, blue);
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            margin: 0.1em
+        }
+        .card-container2 {
+            width: 500px;
+            padding: 1em 2em;
+            background: linear-gradient(to right, blue, whitesmoke);
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            margin: 0.1em
+        }
+        .year-proclaimation {
+            margin: auto;
+            width: 100%;
+            margin-left: 3em;
+            margin-right: auto;
+        }
+        footer {
+            display: flex;
+            border-top-left-radius: 2em;
+            border-top-right-radius: 2em;
+            background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871)
+        }
+        .contactCpm {
+            text-align: center;
+            padding: 2em;
+            margin: 0.5em;
+            color: white
+        }
+        .aboutCpm {
+            text-align: center;
+            padding: 2em;
+            margin: 0.5em;
+            color: white;
+        }
+        .aboutCpm a,
+        .contactCpm a {
+            color: white
+        }
+        .aboutCpm h4,
+        .contactCpm h4 {
+            margin-bottom: 1em;
+        }
+        .footer-wrapper {
+            display: flex
+        }
+        .form-contact {
+            text-align: center;
+            background: darkslateblue;
+            width: 500px;
+            padding: 1em;
+            color: white;
+            border-top-right-radius: 2em
+        }
     }
+    /* Media query for min-width 768px ends */
     
     #scroll-top {
         padding: 0.5em 1em;
@@ -314,51 +449,7 @@
         padding: 0.5em;
         color: rgb(5, 5, 53)
     }
-    
-    .footer-wrapper {
-        display: flex
-    }
-    
-    footer {
-        display: flex;
-        border-top-left-radius: 2em;
-        border-top-right-radius: 2em;
-        background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871)
-    }
-    
-    .form-contact {
-        text-align: center;
-        background: darkslateblue;
-        width: 500px;
-        padding: 1em;
-        color: white;
-        border-top-right-radius: 2em
-    }
     /* style for contact cpm */
-    
-    .contactCpm {
-        text-align: center;
-        padding: 2em;
-        margin: 0.5em;
-        color: white;
-    }
-    
-    .aboutCpm {
-        text-align: center;
-        padding: 2em;
-        margin: 0.5em;
-        color: white;
-    }
-    
-    .aboutCpm a,
-    .contactCpm a {
-        color: white
-    }
-    
-    .aboutCpm h4,
-    .contactCpm h4 {
-        margin-bottom: 1em;
-    }
     /* style for input */
     
     input {
@@ -430,31 +521,6 @@
     }
     /* card-container */
     
-    .card-container1 {
-        width: 500px;
-        padding: 1em 2em;
-        background: linear-gradient(to right, red, blue);
-        color: white;
-        text-align: center;
-        cursor: pointer;
-        margin: 0.1em
-    }
-    
-    .card-container2 {
-        width: 500px;
-        padding: 1em 2em;
-        background: linear-gradient(to right, blue, whitesmoke);
-        color: white;
-        text-align: center;
-        cursor: pointer;
-        margin: 0.1em
-    }
-    
-    .flex-card {
-        display: flex;
-        justify-content: center;
-    }
-    
     .card-container1:hover,
     .card-container2:hover {
         box-shadow: 2px 2px 10px black
@@ -500,17 +566,4 @@
     .welcome-content h5 {
         font-style: italic;
     }
-    /* Welcome to cpm container */
-    
-    .believe-statement {
-        background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
-        width: 700;
-        height: 500;
-        padding: 2em 2em;
-        margin: auto;
-        text-align: center;
-        letter-spacing: 2;
-        color: white;
-        position: relative;
-        top: -12vh
-    }
+    /* Welcome to cpm container  min-width:  786px*/

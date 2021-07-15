@@ -1,19 +1,21 @@
     .contact-container {
         background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
-        width: 900;
+        width: 700;
         height: fit-content;
-        padding: 5em 3em;
+        height: 200;
         margin: auto;
-        margin-bottom: 2em;
+        margin-bottom: 0.5em;
         text-align: center;
-        letter-spacing: 2;
         color: white;
         position: relative;
-        top: -12vh
+        top: -12vh;
+        font-family: cursive;
     }
     
     .contact-container h3 {
-        font-size: 40px
+        font-size: 30px;
+        padding-top: 2em;
+        padding-bottom: 0em;
     }
     
     .mailing-address,
@@ -46,4 +48,19 @@
         border: none;
         outline: none;
         border-radius: 0.5em;
+    }
+    
+    .contact-info {
+        background: chartreuse;
+        margin-top: -10vh;
+        margin-right: 3em;
+        margin-left: 3em;
+    }
+    
+    .emailPhone-contact,
+    .contail-mail,
+    .contact-form {
+        text-align: center;
+        font-family: cursive;
+        padding: 1em
     }

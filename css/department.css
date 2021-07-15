@@ -1,0 +1,145 @@
+.department-heading {
+    background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+    width: 400;
+    height: 200;
+    padding: 1em 2em;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 2;
+    color: white;
+    position: relative;
+    top: 3vh;
+    font-family: cursive;
+}
+
+@media(min-width:768px) {
+    .department-group {
+        display: flex;
+        justify-content: center;
+    }
+    .department-item {
+        background: rgb(165, 121, 121);
+        position: relative;
+        width: 500px;
+        height: 200;
+        cursor: pointer;
+    }
+    .ict-dept {
+        background-image: url('../image/ict-dept.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .sunday-school {
+        background-image: url("../image/sundayschool-dept.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .youth-fellowship {
+        background-image: url("../image/youthfellowship-dept.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .communication-dept {
+        background: url('../image/communication-dept.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .family-fellowship {
+        background: url('../image/familyfellowship-dept.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .technical {
+        background: url('../image/technical-dept.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .department-item:hover {
+        position: relative;
+        width: 500px;
+        padding: 2.5em;
+        cursor: pointer
+    }
+}
+
+@media(max-width:768px) {
+    .department-item {
+        background: rgb(165, 121, 121);
+        position: relative;
+        width: 400px;
+        height: 200;
+        /* margin: 0.3em; */
+        cursor: pointer;
+        /* margin: auto */
+        left: -11
+    }
+    .ict-dept {
+        background-image: url('../image/ict-dept.jpg');
+        background-position: center;
+        background-size: cover;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .sunday-school {
+        background-image: url("../image/sundayschool-dept.jpg");
+        background-position: center;
+        background-size: cover;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .youth-fellowship {
+        background-image: url("../image/youthfellowship-dept.jpg");
+        background-size: cover;
+        background-position: center;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .communication-dept {
+        background: url('../image/communication-dept.jpg');
+        background-size: cover;
+        background-position: center;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .family-fellowship {
+        background: url('../image/familyfellowship-dept.jpg');
+        background-size: cover;
+        background-position: center;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .technical {
+        background: url('../image/technical-dept.jpg');
+        background-size: cover;
+        background-position: center;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .department-item:hover {
+        position: relative;
+        width: 400px;
+        padding: 2.5em;
+        cursor: pointer
+    }
+}
+
+.main-dept-body {
+    margin-top: 20vh;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 20vh
+}
+
+
+/* image to replace the background */
+
+.department-item p {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    top: 40%;
+    font-size: 22px;
+    font-family: arial;
+    font-weight: 600;
+    color: white
+}
